@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario" action="">
+        <label for="">Producto: </label><input id="producto" type="text" value="" required><br>
+        <label for="" style="margin-right: 17px">Precio: </label><input id="precio" type="number" value="" required><br>
+        <label for="">Cantidad: </label><input id="cantidad" type="number" value="" required> <input type="submit" id="boton" value="Agregar" onclick="respuestaBoton();">
+    </form>
+    <br>
+    <table id="tabla">
+        <thead>
+            <th>N°</th><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th><th>Operación</th>
+        </thead>
+        <tbody id="filas"> 
+
+        </tbody>
+        
+    </table>
+    <p id="mostrar">
+
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
