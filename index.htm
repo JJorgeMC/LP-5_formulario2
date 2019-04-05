@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Jorget</title>
 </head>
 <body>
     <form id="formulario" action="">
         <label for="">Producto: </label><input id="producto" type="text" value="" required><br>
         <label for="" style="margin-right: 17px">Precio: </label><input id="precio" type="number" value="" required><br>
-        <label for="">Cantidad: </label><input id="cantidad" type="number" value="" required> <input type="submit" id="boton" value="Agregar" onclick="respuestaBoton();">
+        <label for="">Cantidad: </label><input id="cantidad" type="number" value="" required> 
+        <span id="sp_boton">
+            <input type="button" id="boton" value="Agregar" onclick="respuestaBoton()">
+        </span>
     </form>
-    <br>
+    <br>    
     <table id="tabla">
         <thead>
             <th>N°</th><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th><th>Operación</th>
@@ -24,8 +28,11 @@
         
     </table>
     <p id="mostrar">
-
+        Subtotal: <span id="subtotal"></span><br>
+        IGV: <span id="igvtotal"></span><br>
+        Total: <span id="total"></span><br>
     </p>
     <script src="script.js"></script>
 </body>
 </html>
+
